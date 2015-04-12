@@ -1,0 +1,14 @@
+<div class="col-md-4">
+    <h2> Edit Quote</h2>
+    <form {{action 'save' on="submit"}}>
+        <dl>
+            <dt><p>Quote:</p> {{textarea value=model.quote cols="40" rows="1"}}</dt>
+            <dt><p>Author:</p> {{textarea value=model.author cols="20" rows="1"}}</dt>
+        </dl>
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Done</button>
+            <button type="delete" class="btn btn-primary" {{action 'del' on='click'}}>Destroy</button>
+        </div>
+    </form>
+    
+</div>
