@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.route('erik');
   this.resource('quote', function() {
+    this.route('new');
     this.route('edit', {
         path: ":quote_id"
     }); 
